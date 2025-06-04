@@ -24,6 +24,55 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+
+      height: 100%;
+      margin: 0;
+      background-color: rgba(177, 224, 253, 0.954);
+    }
+
+    .top-bar {
+      padding: 10px 0;
+      font-size: large;
+      background-color: rgba(177, 224, 253, 0.954);
+    }
+
+    .school-name {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #0b112a;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      color: #53687a;
+    }
+
+    .navbar {
+      background-color: #0b2e3d;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: 500;
+      font-size: large;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffc107 !important;
+    }
+
+    .logo {
+
+
+
+      border-radius: 50px;
+      border: 1px solid #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+
+    }
 .hovereffect {
       width: 100%;
       height: 100%;
@@ -227,10 +276,96 @@
       opacity: 1;
       filter: alpha(opacity=100);
     }
+    footer {
+      background-color: #0b2e3d;
+      ;
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .footer-link {
+      color: #ffffffcc;
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+      color: #ffc107;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.2rem;
+      margin-right: 15px;
+    }
+
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+
+    .newsletter input {
+      border-radius: 0;
+      border: none;
+    }
+
+    .map-container {
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
   </style>
 </head>
   <body>
+ <!-- 🔷 Header Top Bar -->
+ <div class="top-bar stickly-top" >
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex align-items-center gap-3">
+      <img class="logo" src="aasets/ups2.png" alt="School Logo" style="width: 90px; height: 90px;" />
+      <div>
+        <div class="school-name">Universal Public School</div>
+        <div class="tagline">Nurturing Minds, Shaping Futures</div>
+      </div>
+    </div>
+    <div class="d-flex gap-3 mt-2 mt-md-0">
+      <a href="Login.html" class="text-dark text-decoration-none">Login</a>
+      <a href="Alumni.html"  class="text-dark text-decoration-none">Alumni</a>
+      <a href="Fees.html" class="text-dark text-decoration-none">Fees</a>
+      <select class="form-select form-select-sm" style="width: auto;">
+        <option selected>EN</option>
+        <option value="1">HI</option>
+      </select>
+    </div>
+  </div>
+</div>
 
+<!-- 🔷 Navigation Menu -->
+<nav class="navbar navbar-expand-lg navbar-dark stickly-top">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="#">Bright Future School</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#schoolNavbar"
+      aria-controls="schoolNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="schoolNavbar">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="Academics.html">Academics</a></li>
+        <li class="nav-item"><a class="nav-link" href="Admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="Facilities.html">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="Event.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="row">
     <div class="col-md-3">
       <div class="hovereffect">
@@ -590,3 +725,190 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Gallery</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4f8;
+    }
+
+    .gallery-section {
+      padding: 60px 30px;
+    }
+
+    .gallery-heading {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .gallery-img {
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .gallery-img img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    /* Modal image responsive */
+    .modal-img {
+      width: 100%;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<section class="gallery-section">
+  <h2 class="gallery-heading">📸 School Gallery</h2>
+  
+  <div class="container">
+    <div class="row g-4">
+      <!-- Gallery Item -->
+      <div class="col-md-4">
+        <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('https://source.unsplash.com/600x400/?school,classroom')">
+          <img src="https://source.unsplash.com/600x400/?school,classroom" alt="School Photo 1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('https://source.unsplash.com/600x400/?students,education')">
+          <img src="https://source.unsplash.com/600x400/?students,education" alt="School Photo 2">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('https://source.unsplash.com/600x400/?school,event')">
+          <img src="https://source.unsplash.com/600x400/?school,event" alt="School Photo 3">
+        </div>
+      </div>
+
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img id="modalImage" class="modal-img" src="" alt="Full View">
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row text-start">
+
+      <!-- Contact Info -->
+      <div class="col-md-3 animate__animated animate__fadeInLeft">
+        <h3 class="footer-title">Contact Info</h3>
+        <p><i class="fas fa-phone-alt me-2"></i>+91 7240844648</p>
+        <p><i class="fas fa-envelope me-2"></i>kajalguptaa2022@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt me-2"></i>Central Hospital Road MDGR, (C.G)</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-3 animate__animated animate__fadeInUp">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer-link">Admission</a></li>
+          <li><a href="#" class="footer-link">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3 animate__animated animate__fadeInUp">
+        <h3 class="footer-title">Newsletter</h3>
+        <p>Stay updated with school news.</p>
+        <form class="newsletter d-flex">
+          <input type="email" class="form-control me-2" placeholder="Your email">
+          <button class="btn btn-warning">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-3 animate__animated animate__fadeInRight">
+        <h3 class="footer-title">Our Location</h3>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.8317322304465!2d82.20696787387271!3d23.21280210920521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39862aa1ff20c253%3A0x893bfdb6003ff8ae!2sUniversal%20Public%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1749044583749!5m2!1sen!2sin" 
+          width="600" height="450" style="border:0;" allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Social Media -->
+    <div class="row mt-4">
+      <div class="col text-center animate__animated animate__fadeIn">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="row mt-3">
+      <div class="col text-center text-light small">
+        &copy; 2025 Universal Public School. All Rights Reserved.
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- Bootstrap JS Bundle -->
+
+<!-- Bootstrap JS (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function showImage(src) {
+    document.getElementById('modalImage').src = src;
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
